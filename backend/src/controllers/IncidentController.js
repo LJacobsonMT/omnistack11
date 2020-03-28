@@ -50,10 +50,10 @@ module.exports = {
             .first()
 
         //Condição para quando não houverem incidentes
-        if (!incident) {
-            console.log("null")
-            return res.status(400).json({ "error": "0 incidents found." })
-        }
+        // if (!incident) {
+        //     console.log("null")
+        //     return res.status(400).json({ "error": "0 incidents found." })
+        // }
         if (incident.ong_id != ong_id) {
             return res.status(401).json({ "error": 'Operation not permitted.' })
         }
